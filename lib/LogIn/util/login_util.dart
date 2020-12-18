@@ -26,8 +26,7 @@ class LoginUtil {
         //'api_key': api_key,
       };
       // var jsonResponse = null;
-      var url =
-          "https://slbs21.luckbyspin.in/API/LoginDemo?username=demo&password=demo";
+      var url = "https://slbs21.luckbyspin.in/API/LoginDemo";
       var response = await http.post(
         url,
         headers: {

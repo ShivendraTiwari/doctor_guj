@@ -48,17 +48,6 @@ class _State extends State<SignIn> {
   bool isSwitched = false;
   bool loginError = false;
 
-  void _showToast(BuildContext context) {
-    final scaffold = Scaffold.of(context);
-    scaffold.showSnackBar(
-      SnackBar(
-        content: const Text('Added to favorite'),
-        action: SnackBarAction(
-            label: 'UNDO', onPressed: scaffold.hideCurrentSnackBar),
-      ),
-    );
-  }
-
   final GlobalKey<State> _keyLoader = new GlobalKey<State>();
   static const Color button = Color(0xFFFeedb07);
   int _value = 1;
